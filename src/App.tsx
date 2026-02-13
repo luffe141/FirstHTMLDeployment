@@ -20,7 +20,7 @@ export default function App() {
         flexDirection: "column",
       }}
     >
-      <AppBar position="sticky" color="transparent" elevation={0}>
+      <AppBar position="sticky" sx={{ bgcolor: "#f5f5f5" }} elevation={0}>
         <Container maxWidth="lg">
           <Toolbar disableGutters sx={{ py: 1.5 }}>
             <Typography
@@ -30,20 +30,27 @@ export default function App() {
               sx={{
                 flexGrow: 1,
                 fontWeight: 700,
-                color: "black",
+                color: "#000",
                 textDecoration: "none",
+                border: "none",
+                outline: "none",
+                "&:focus": { outline: "none" },
               }}
             >
               FirstHTML
             </Typography>
             <Stack direction="row" spacing={3} sx={{ alignItems: "center" }}>
-              <Button color="inherit" component={RouterLink} to="/">
+              <Button sx={{ color: "#000" }} component={RouterLink} to="/">
                 T1
               </Button>
-              <Button color="inherit" component={RouterLink} to="/">
+              <Button sx={{ color: "#000" }} component={RouterLink} to="/">
                 Faker Tower
               </Button>
-              <Button color="inherit" component={RouterLink} to="/achivements">
+              <Button
+                sx={{ color: "#000" }}
+                component={RouterLink}
+                to="/achivements"
+              >
                 Achivements
               </Button>
               <Button
