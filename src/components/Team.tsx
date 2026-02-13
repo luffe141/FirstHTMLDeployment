@@ -41,7 +41,31 @@ export default function Team() {
             <p>Support</p>
           </Box>
         </Container>
-        <Container></Container>
+        <Container>
+          <Box>
+            <h1>About T1</h1>
+          </Box>
+          <Box>
+            <p>
+              The current T1 roster represents one of the most dominant lineups
+              in League of Legends history. Led by the legendary Faker in the
+              mid lane, T1 continues to set the standard for excellence in
+              competitive play. Doran brings aggressive top lane prowess, while
+              Oner controls the jungle with precision and game sense. Faker
+              remains the cornerstone of the team, known for his unmatched skill
+              and clutch performances. Peyz joined as the bot laner, adding
+              fresh talent and mechanical skill to the roster. Keria, widely
+              regarded as one of the best supports in the world, rounds out the
+              lineup with incredible playmaking ability. Together, this roster
+              has claimed multiple LCK titles and competed at the highest level
+              internationally. T1's synergy and strategic depth make them a
+              constant threat in every tournament they enter. With a mix of
+              veteran leadership and emerging talent, the team continues to
+              evolve and adapt. Fans around the world rally behind T1 as they
+              chase another World Championship title.
+            </p>
+          </Box>
+        </Container>
       </Container>
     </Box>
   );

@@ -8,10 +8,18 @@ import {
   Typography,
 } from "@mui/material";
 import { Link as RouterLink, Outlet } from "react-router-dom";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <Box sx={{ minHeight: "100vh", bgcolor: "background.default" }}>
+    <Box
+      sx={{
+        minHeight: "100vh",
+        bgcolor: "background.default",
+        display: "flex",
+        flexDirection: "column",
+      }}
+    >
       <AppBar position="sticky" color="transparent" elevation={0}>
         <Container maxWidth="lg">
           <Toolbar disableGutters sx={{ py: 1.5 }}>
@@ -38,12 +46,18 @@ export default function App() {
               <Button color="inherit" component={RouterLink} to="/achivements">
                 Achivements
               </Button>
-              <Button variant="contained">Contact</Button>
+              <Button
+                variant="contained"
+                sx={{ color: "black", bgcolor: "white" }}
+              >
+                Contact
+              </Button>
             </Stack>
           </Toolbar>
         </Container>
       </AppBar>
       <Outlet />
+      <Footer />
     </Box>
   );
 }
