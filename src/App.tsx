@@ -4,7 +4,9 @@ import React from "react";
 export default function App() {
   return (
     <>
-      <Container></Container>
+      <Container>
+        <h1>Welcome to the App!</h1>
+      </Container>
     </>
   );
 }
